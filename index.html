@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzrichtlinie – Filmkiste</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+      color: #1c1c1e;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #000000; color: #f2f2f7; }
+      table { border-color: #3a3a3c; }
+      th { background: #1c1c1e; }
+      td, th { border-color: #3a3a3c; }
+    }
+    h1 { font-size: 1.8em; margin-bottom: 4px; }
+    h2 { font-size: 1.2em; margin-top: 2em; border-bottom: 1px solid #e5e5ea; padding-bottom: 4px; }
+    h3 { font-size: 1em; margin-top: 1.4em; margin-bottom: 4px; }
+    p, li { font-size: 0.97em; }
+    .subtitle { color: #6c6c70; font-size: 0.9em; margin-top: 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.9em; }
+    th, td { border: 1px solid #d1d1d6; padding: 8px 12px; text-align: left; }
+    th { background: #f2f2f7; font-weight: 600; }
+    a { color: #007aff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 1.4em; }
+    li { margin: 4px 0; }
+  </style>
+</head>
+<body>
+
+  <h1>Datenschutzrichtlinie – Filmkiste</h1>
+  <p class="subtitle">Letzte Aktualisierung: 20. März 2026</p>
+
+  <h2>Überblick</h2>
+  <p>Filmkiste ist eine iOS-App zur Verwaltung deiner DVD-, Blu-ray- und 4K-UHD-Sammlung. Deine Privatsphäre ist uns wichtig. Diese Datenschutzrichtlinie erklärt, welche Daten die App verarbeitet und wie sie damit umgeht.</p>
+
+  <h2>Welche Daten werden verarbeitet?</h2>
+
+  <h3>Barcode-Daten</h3>
+  <p>Wenn du einen Barcode scannst, wird die EAN/UPC-Nummer an folgende Dienste gesendet, um den zugehörigen Titel zu ermitteln:</p>
+  <ul>
+    <li>UPCitemdb.com</li>
+    <li>UPCDatabase.org</li>
+    <li>EAN-Search.org</li>
+  </ul>
+
+  <h3>Film- und Serienmetadaten</h3>
+  <p>Titel, Poster, Bewertungen und weitere Metadaten werden von <strong>TMDB</strong> (The Movie Database, themoviedb.org) abgerufen. Diese Daten werden lokal auf deinem Gerät gespeichert.</p>
+
+  <h3>Lokale Daten</h3>
+  <p>Deine gesamte Sammlung (Filme, Serien, Kisten-Zuordnungen, Medientypen) wird ausschließlich <strong>lokal auf deinem Gerät</strong> und – sofern aktiviert – in deinem <strong>persönlichen iCloud-Account</strong> gespeichert.</p>
+
+  <h3>Kamera</h3>
+  <p>Die App nutzt die Kamera ausschließlich zum Scannen von Barcodes. Es werden keine Bilder gespeichert oder übertragen.</p>
+
+  <h2>Welche Daten werden NICHT erhoben?</h2>
+  <ul>
+    <li><strong>Keine persönlichen Daten</strong> (Name, E-Mail, Adresse)</li>
+    <li><strong>Keine Standortdaten</strong></li>
+    <li><strong>Keine Tracking- oder Analysedaten</strong></li>
+    <li><strong>Keine Werbung</strong></li>
+    <li><strong>Keine Weitergabe an Dritte</strong> zu Marketing- oder Werbezwecken</li>
+    <li><strong>Keine Nutzerkonten</strong> – die App erfordert keine Registrierung</li>
+  </ul>
+
+  <h2>iCloud-Synchronisation</h2>
+  <p>Wenn iCloud für die App aktiviert ist, wird deine Sammlung über Apples CloudKit zwischen deinen Geräten synchronisiert. Diese Daten unterliegen Apples Datenschutzrichtlinie und sind Ende-zu-Ende in deinem persönlichen iCloud-Account gespeichert.</p>
+
+  <h2>Drittanbieter-Dienste</h2>
+  <table>
+    <thead>
+      <tr><th>Dienst</th><th>Zweck</th><th>Datenschutzrichtlinie</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>TMDB</td><td>Film-/Serienmetadaten &amp; Poster</td><td><a href="https://www.themoviedb.org/privacy-policy">themoviedb.org/privacy-policy</a></td></tr>
+      <tr><td>UPCitemdb</td><td>Barcode-Lookup</td><td><a href="https://www.upcitemdb.com/privacy">upcitemdb.com/privacy</a></td></tr>
+      <tr><td>UPCDatabase.org</td><td>Barcode-Lookup</td><td><a href="https://www.upcdatabase.org">upcdatabase.org</a></td></tr>
+      <tr><td>EAN-Search.org</td><td>Barcode-Lookup</td><td><a href="https://www.ean-search.org/privacy.html">ean-search.org/privacy.html</a></td></tr>
+      <tr><td>Apple CloudKit</td><td>iCloud-Sync</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+    </tbody>
+  </table>
+  <p>An diese Dienste werden ausschließlich Barcodes bzw. Suchbegriffe übermittelt – keine persönlichen Daten.</p>
+
+  <h2>Datenspeicherung</h2>
+  <p>Alle App-Daten werden lokal auf deinem Gerät gespeichert:</p>
+  <ul>
+    <li>Filmdatenbank (SwiftData)</li>
+    <li>Poster-Cache (lokal im App-Verzeichnis)</li>
+    <li>Einstellungen (UserDefaults)</li>
+  </ul>
+  <p>Du kannst jederzeit alle Daten über die Einstellungen der App löschen oder die App deinstallieren.</p>
+
+  <h2>Kinder</h2>
+  <p>Die App erhebt keine Daten und ist für alle Altersgruppen geeignet.</p>
+
+  <h2>Änderungen</h2>
+  <p>Bei Änderungen an dieser Datenschutzrichtlinie wird das Datum oben aktualisiert.</p>
+
+  <h2>Kontakt</h2>
+  <p>Bei Fragen zur Datenschutzrichtlinie erreichst du mich unter:<br>
+  <a href="mailto:quart-messgeraet4i@icloud.com">quart-messgeraet4i@icloud.com</a></p>
+
+</body>
+</html>

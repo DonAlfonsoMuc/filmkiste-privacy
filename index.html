@@ -45,23 +45,24 @@
   <!-- ENGLISH -->
   <div id="content-en">
     <h1>Privacy Policy – Filmkiste</h1>
-    <p class="subtitle">Last updated: March 20, 2026</p>
+    <p class="subtitle">Last updated: April 14, 2026</p>
 
     <h2>Overview</h2>
-    <p>Filmkiste is an iOS app for managing your DVD, Blu-ray, and 4K UHD collection. Your privacy matters. This privacy policy explains what data the app processes and how it handles it.</p>
+    <p>Filmkiste is an app for iPhone, iPad, and Mac for managing your DVD, Blu-ray, and 4K UHD collection. Your privacy matters. This privacy policy explains what data the app processes and how it handles it.</p>
 
     <h2>What data is processed?</h2>
 
     <h3>Barcode data</h3>
-    <p>When you scan a barcode, the EAN/UPC number is sent to the following services to identify the corresponding title:</p>
+    <p>When you scan a barcode, the EAN/UPC number is sent to a server operated by the developer (Cloudflare Worker) which forwards the request to barcode lookup services to identify the corresponding title:</p>
     <ul>
       <li>UPCitemdb.com</li>
       <li>UPCDatabase.org</li>
       <li>EAN-Search.org</li>
     </ul>
+    <p>Only the barcode number is transmitted – no personal data.</p>
 
     <h3>Movie and TV metadata</h3>
-    <p>Titles, posters, ratings, and other metadata are fetched from <strong>TMDB</strong> (The Movie Database, themoviedb.org). This data is stored locally on your device.</p>
+    <p>Titles, posters, ratings, and other metadata are fetched via the developer's server (Cloudflare Worker) from <strong>TMDB</strong> (The Movie Database, themoviedb.org). Only search terms and TMDB IDs are transmitted. This data is stored locally on your device.</p>
 
     <h3>Local data</h3>
     <p>Your entire collection (movies, series, box assignments, media types) is stored exclusively <strong>locally on your device</strong> and – if enabled – in your <strong>personal iCloud account</strong>.</p>
@@ -69,12 +70,22 @@
     <h3>Camera</h3>
     <p>The app uses the camera solely for scanning barcodes. No images are saved or transmitted.</p>
 
+    <h2>Voluntary data contribution (Datenspende)</h2>
+    <p>Filmkiste includes an optional feature to help build a community barcode database. If you choose to participate, the following data is transmitted to the developer's server when you save a title:</p>
+    <ul>
+      <li>Barcode number (EAN/UPC)</li>
+      <li>Film or series title</li>
+      <li>Media type (e.g. DVD, Blu-ray)</li>
+      <li>TMDB ID</li>
+      <li>Timestamp</li>
+    </ul>
+    <p><strong>This feature is strictly opt-in.</strong> You will be asked for consent before any data is sent. No personal data is transmitted. You can withdraw consent at any time in the app settings.</p>
+
     <h2>What data is NOT collected?</h2>
     <ul>
       <li><strong>No personal data</strong> (name, email, address)</li>
       <li><strong>No location data</strong></li>
-      <li><strong>No tracking or analytics data</strong></li>
-      <li><strong>No advertising</strong></li>
+      <li><strong>No advertising or tracking analytics</strong></li>
       <li><strong>No sharing with third parties</strong> for marketing or advertising purposes</li>
       <li><strong>No user accounts</strong> – the app requires no registration</li>
     </ul>
@@ -88,6 +99,7 @@
         <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
       </thead>
       <tbody>
+        <tr><td>Cloudflare</td><td>Server infrastructure (API proxy)</td><td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td></tr>
         <tr><td>TMDB</td><td>Movie/TV metadata &amp; posters</td><td><a href="https://www.themoviedb.org/privacy-policy">themoviedb.org/privacy-policy</a></td></tr>
         <tr><td>UPCitemdb</td><td>Barcode lookup</td><td><a href="https://www.upcitemdb.com/privacy">upcitemdb.com/privacy</a></td></tr>
         <tr><td>UPCDatabase.org</td><td>Barcode lookup</td><td><a href="https://www.upcdatabase.org">upcdatabase.org</a></td></tr>
@@ -95,7 +107,6 @@
         <tr><td>Apple CloudKit</td><td>iCloud sync</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
       </tbody>
     </table>
-    <p>Only barcodes and search terms are transmitted to these services – no personal data.</p>
 
     <h2>Data storage</h2>
     <p>All app data is stored locally on your device:</p>
@@ -107,7 +118,7 @@
     <p>You can delete all data at any time via the app's settings or by uninstalling the app.</p>
 
     <h2>Children</h2>
-    <p>The app does not collect any data and is suitable for all age groups.</p>
+    <p>The app does not collect any personal data and is suitable for all age groups.</p>
 
     <h2>Changes</h2>
     <p>If this privacy policy changes, the date at the top will be updated.</p>
@@ -120,23 +131,24 @@
   <!-- DEUTSCH -->
   <div id="content-de">
     <h1>Datenschutzrichtlinie – Filmkiste</h1>
-    <p class="subtitle">Letzte Aktualisierung: 20. März 2026</p>
+    <p class="subtitle">Letzte Aktualisierung: 14. April 2026</p>
 
     <h2>Überblick</h2>
-    <p>Filmkiste ist eine iOS-App zur Verwaltung deiner DVD-, Blu-ray- und 4K-UHD-Sammlung. Deine Privatsphäre ist uns wichtig. Diese Datenschutzrichtlinie erklärt, welche Daten die App verarbeitet und wie sie damit umgeht.</p>
+    <p>Filmkiste ist eine App für iPhone, iPad und Mac zur Verwaltung deiner DVD-, Blu-ray- und 4K-UHD-Sammlung. Deine Privatsphäre ist uns wichtig. Diese Datenschutzrichtlinie erklärt, welche Daten die App verarbeitet und wie sie damit umgeht.</p>
 
     <h2>Welche Daten werden verarbeitet?</h2>
 
     <h3>Barcode-Daten</h3>
-    <p>Wenn du einen Barcode scannst, wird die EAN/UPC-Nummer an folgende Dienste gesendet, um den zugehörigen Titel zu ermitteln:</p>
+    <p>Wenn du einen Barcode scannst, wird die EAN/UPC-Nummer an einen vom Entwickler betriebenen Server (Cloudflare Worker) gesendet, der die Anfrage zur Titelermittlung an Barcode-Lookup-Dienste weiterleitet:</p>
     <ul>
       <li>UPCitemdb.com</li>
       <li>UPCDatabase.org</li>
       <li>EAN-Search.org</li>
     </ul>
+    <p>Es wird ausschließlich die Barcode-Nummer übermittelt – keine persönlichen Daten.</p>
 
     <h3>Film- und Serienmetadaten</h3>
-    <p>Titel, Poster, Bewertungen und weitere Metadaten werden von <strong>TMDB</strong> (The Movie Database, themoviedb.org) abgerufen. Diese Daten werden lokal auf deinem Gerät gespeichert.</p>
+    <p>Titel, Poster, Bewertungen und weitere Metadaten werden über den Entwickler-Server (Cloudflare Worker) von <strong>TMDB</strong> (The Movie Database, themoviedb.org) abgerufen. Dabei werden nur Suchbegriffe und TMDB-IDs übertragen. Die Daten werden lokal auf deinem Gerät gespeichert.</p>
 
     <h3>Lokale Daten</h3>
     <p>Deine gesamte Sammlung (Filme, Serien, Kisten-Zuordnungen, Medientypen) wird ausschließlich <strong>lokal auf deinem Gerät</strong> und – sofern aktiviert – in deinem <strong>persönlichen iCloud-Account</strong> gespeichert.</p>
@@ -144,12 +156,22 @@
     <h3>Kamera</h3>
     <p>Die App nutzt die Kamera ausschließlich zum Scannen von Barcodes. Es werden keine Bilder gespeichert oder übertragen.</p>
 
+    <h2>Freiwillige Datenspende</h2>
+    <p>Filmkiste enthält eine optionale Funktion zum Aufbau einer Community-Barcode-Datenbank. Wenn du teilnimmst, werden beim Speichern eines Titels folgende Daten an den Entwickler-Server gesendet:</p>
+    <ul>
+      <li>Barcode-Nummer (EAN/UPC)</li>
+      <li>Film- oder Serientitel</li>
+      <li>Medientyp (z. B. DVD, Blu-ray)</li>
+      <li>TMDB-ID</li>
+      <li>Zeitstempel</li>
+    </ul>
+    <p><strong>Diese Funktion ist ausschließlich opt-in.</strong> Du wirst vor der ersten Übertragung um deine Zustimmung gebeten. Es werden keine persönlichen Daten übermittelt. Die Zustimmung kann jederzeit in den App-Einstellungen widerrufen werden.</p>
+
     <h2>Welche Daten werden NICHT erhoben?</h2>
     <ul>
       <li><strong>Keine persönlichen Daten</strong> (Name, E-Mail, Adresse)</li>
       <li><strong>Keine Standortdaten</strong></li>
-      <li><strong>Keine Tracking- oder Analysedaten</strong></li>
-      <li><strong>Keine Werbung</strong></li>
+      <li><strong>Keine Werbung oder Tracking-Analysen</strong></li>
       <li><strong>Keine Weitergabe an Dritte</strong> zu Marketing- oder Werbezwecken</li>
       <li><strong>Keine Nutzerkonten</strong> – die App erfordert keine Registrierung</li>
     </ul>
@@ -163,6 +185,7 @@
         <tr><th>Dienst</th><th>Zweck</th><th>Datenschutzrichtlinie</th></tr>
       </thead>
       <tbody>
+        <tr><td>Cloudflare</td><td>Server-Infrastruktur (API-Proxy)</td><td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td></tr>
         <tr><td>TMDB</td><td>Film-/Serienmetadaten &amp; Poster</td><td><a href="https://www.themoviedb.org/privacy-policy">themoviedb.org/privacy-policy</a></td></tr>
         <tr><td>UPCitemdb</td><td>Barcode-Lookup</td><td><a href="https://www.upcitemdb.com/privacy">upcitemdb.com/privacy</a></td></tr>
         <tr><td>UPCDatabase.org</td><td>Barcode-Lookup</td><td><a href="https://www.upcdatabase.org">upcdatabase.org</a></td></tr>
@@ -170,7 +193,6 @@
         <tr><td>Apple CloudKit</td><td>iCloud-Sync</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
       </tbody>
     </table>
-    <p>An diese Dienste werden ausschließlich Barcodes bzw. Suchbegriffe übermittelt – keine persönlichen Daten.</p>
 
     <h2>Datenspeicherung</h2>
     <p>Alle App-Daten werden lokal auf deinem Gerät gespeichert:</p>
@@ -182,7 +204,7 @@
     <p>Du kannst jederzeit alle Daten über die Einstellungen der App löschen oder die App deinstallieren.</p>
 
     <h2>Kinder</h2>
-    <p>Die App erhebt keine Daten und ist für alle Altersgruppen geeignet.</p>
+    <p>Die App erhebt keine persönlichen Daten und ist für alle Altersgruppen geeignet.</p>
 
     <h2>Änderungen</h2>
     <p>Bei Änderungen an dieser Datenschutzrichtlinie wird das Datum oben aktualisiert.</p>
